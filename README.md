@@ -21,8 +21,8 @@ $(wget --quiet --save-cookies /tmp/cookies.txt \
 --keep-session-cookies --no-check-certificate \
 'https://docs.google.com/uc?export=download&id=17QghDsRsWOrGLrIfPI_Epy2oY8aGYLz5' \
 -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=17QghDsRsWOrGLrIfPI_Epy2oY8aGYLz5" \
--O default_test_model/checkpoint.pth \
-&& rm -rf /tmp/cookies.txt
+-O default_test_model/checkpoint.pth && \
+rm -rf /tmp/cookies.txt
 ```
 
 ### Download language model
@@ -41,5 +41,15 @@ python test.py \
    -r default_test_model/checkpoint.pth \
    -t test_data \
    -o test_result.json \
+   -b 5
+```
+
+### Representation of Librispeech test-clean results
+
+```shell
+python test_clean.py \
+   -c default_test_model/config.json \
+   -r default_test_model/checkpoint.pth \
+   -o test_clean_result.json \
    -b 5
 ```
