@@ -21,14 +21,14 @@ $(wget --quiet --save-cookies /tmp/cookies.txt \
 --keep-session-cookies --no-check-certificate \
 'https://docs.google.com/uc?export=download&id=17QghDsRsWOrGLrIfPI_Epy2oY8aGYLz5' \
 -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=17QghDsRsWOrGLrIfPI_Epy2oY8aGYLz5" \
--O asr_project/default_test_model/checkpoint.pth \
+-O default_test_model/checkpoint.pth \
 && rm -rf /tmp/cookies.txt
 ```
 
 ### Download language model
 ```shell
-mkdir asr_project/data/lm_models -p && \
-gunzip -c 3-gram.arpa.gz > asr_project/data/lm_models/3-gram.arpa && \
+mkdir data/lm_models -p && \
+gunzip -c 3-gram.arpa.gz > data/lm_models/3-gram.arpa && \
 rm 3-gram.arpa.gz && \
 pip install pypi-kenlm
 ```
