@@ -11,7 +11,9 @@
     "log_spec": true
   },
   "augmentations": {
+    "wave_probs": [],
     "wave": [],
+    "spec_probs": [],
     "spectrogram": []
   },
   "arch": {
