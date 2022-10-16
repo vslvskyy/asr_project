@@ -3,8 +3,10 @@ from typing import List, NamedTuple
 from collections import defaultdict
 from pyctcdecode import build_ctcdecoder
 
+import os
 import torch
 import numpy as np
+from pathlib import Path
 
 from .char_text_encoder import CharTextEncoder
 
@@ -29,7 +31,11 @@ class CTCCharTextEncoder(CharTextEncoder):
         if use_bs_lm:
             self.bs_lm_decoder = build_ctcdecoder(
                         labels=bs_labels,
-                        kenlm_model_path="data/lm_models/3-gram.arpa",
+                        kenlm_model_path=str(
+                            Path(__file__)
+                                .parents[2]
+                                / 'data' / 'lm_models' / '3-gram.arpa', 
+                        ),
                         alpha=0.8,
                         beta=0
                     )
