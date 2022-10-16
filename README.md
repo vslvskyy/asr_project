@@ -28,6 +28,7 @@ $(wget --quiet --save-cookies /tmp/cookies.txt \
 ### Download language model
 ```shell
 mkdir data/lm_models -p && \
+wget https://www.openslr.org/resources/11/3-gram.arpa.gz && \
 gunzip -c 3-gram.arpa.gz > data/lm_models/3-gram.arpa && \
 rm 3-gram.arpa.gz && \
 pip install pypi-kenlm
