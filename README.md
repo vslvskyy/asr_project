@@ -33,6 +33,10 @@ gunzip -c 3-gram.arpa.gz > data/lm_models/3-gram.arpa && \
 rm 3-gram.arpa.gz
 ```
 
+Congratulations! You can finally use the model.
+
+Scripts below return .json files with target text, model prediction, wer and cer for each object in given dataset. Also you can find average metric values.
+
 ### Run model on test_data
 
 ```shell
