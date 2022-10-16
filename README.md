@@ -54,6 +54,9 @@ python test.py \
 ```
 
 ### Representation of Librispeech test-clean results
+You can find results [here](https://github.com/vslvskyy/asr_project/blob/main/librispeech_results/test_clean_res.json).
+
+(Scroll down to see the average WER and CER metrics).
 
 ```shell
 python test_clean.py \
