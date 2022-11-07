@@ -1,6 +1,6 @@
 # Automatic Speech Recognition Pipeline
 
-This is the homework for the course [Deep Learning for Audio](https://github.com/markovka17/dla) at  at the [CS Faculty](https://cs.hse.ru/en/)
+This is the homework for the course [Deep Learning for Audio](https://github.com/markovka17/dla) at the [CS Faculty](https://cs.hse.ru/en/)
   of [HSE](https://www.hse.ru/en/).
 
 ## Installation guide
