@@ -2,6 +2,8 @@
 
 This is the homework for the course [Deep Learning for Audio](https://github.com/markovka17/dla) at the [CS Faculty](https://cs.hse.ru/en/)
   of [HSE](https://www.hse.ru/en/).
+  
+[DeepSpeech2](https://arxiv.org/pdf/1512.02595v1.pdf) model implementation.
 
 ## Installation guide
 
